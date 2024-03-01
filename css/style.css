@@ -1,0 +1,405 @@
+/*---------- IMPORTS ----------*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+/*---------- RESET ----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+:root {
+    --color-black: #000000;
+    --color-black-soft: #1E1E1E;
+    --color-dark-gray: #333333;
+    --color-medium-gray: #666666;
+    --color-light-gray: #999999;
+    --color-white-soft: #F5F5F5;
+    --color-white: #ffffff;
+    --color-white-snow: #fffafa;
+    --color-green: rgb(43, 197, 171);
+    --color-dark-green: #004D40;
+    --color-burgundy: #800000;
+    --color-dark-blue: #1A237E;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+strong {
+    font-weight: 500;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    line-height: 1.5rem;
+}
+body {
+    background-color: var(--color-white);
+    transition: all .3s ease;
+}
+
+/* LINE BETWEEN SECTIONS */
+section {
+    position: relative; 
+}
+section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background-color: #ddd;
+}
+
+/*---------- HEADER ----------*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-out;
+    padding: 2rem 0;
+    z-index: 10;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+header nav ul li a {
+    position: relative;
+    color: var(--color-black);
+    font-size: 18px;
+    transition: all .6s ease;
+}
+header nav ul li a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .3s;
+}
+header nav ul li a:hover::after {
+    width: 100%;
+    background: var(--color-dark-green);
+}
+/* Turn header to backgroun white */
+.header-active {
+    background-color: var(--color-white-snow);
+}
+
+
+/*---------- HOME > HERO SECTION ----------*/
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-white-soft);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.am-logo {
+    font-family: "Crimson Pro", serif;
+    font-weight: 100;
+    font-size: 5rem;
+    letter-spacing: -6px;
+}
+.hero-text h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.hero-text p{
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+
+/*---------- HOME > ABOUT ME ----------*/
+.about-me-container{
+    width: 100%;
+    padding: 6rem 0;
+    margin-top: 20px;
+}
+.sections-title{
+    font-family: "Crimson Pro", serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+}
+.about-me-container .about-me-content{
+    color: var(--color-black);
+    text-align: justify;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.about-me-container .about-me-content img {
+    box-shadow: -16px 15px 5px 0px rgba(102,102,102,0.23);
+    -webkit-box-shadow: -16px 15px 5px 0px rgba(102,102,102,0.23);
+    -moz-box-shadow: -16px 15px 5px 0px rgba(102,102,102,0.23);
+}
+
+.about-me-container .about-me-content .about-me-text h3{
+    font-weight: 360;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+
+/*---------- HOME > KNOWLEDGE ----------*/
+.knowledge-container{
+    width: 100%;
+    padding: 6rem 0;
+    margin-top: 20px;
+}
+.knowledge-container p{
+    text-align: center;
+}
+.knowledge-container .knowledge-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 3rem;
+}
+.knowledge-container .knowledge-content svg{
+    width: 80px;
+}
+
+
+/*---------- HOME > PORTFOLIO ----------*/
+
+
+.portfolio-container{
+    width: 100%;
+    background-color: var(--color-white-snow);
+    padding: 6rem 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-container .portfolio-content{
+    background-color: var(--color-white);
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+}
+
+.project{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project .project-text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.project .project-text h3{
+    font-family: "Crimson Pro", serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.project button{
+    background-color: transparent;
+    border: 2px solid var(--color-dark-gray);
+    font-family: "Roboto Slab", serif;  
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    
+    padding: 1rem 2.5rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+.project button:hover {
+    border: 2px solid var(--color-green);
+    color: var(--color-green);
+}
+
+
+
+
+
+
+
+
+
+/*---------- HOME > FOOTER ----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------- DARK MODE TOGGLE ----------*/
+.dark-mode-toggle{
+    background-color: var(--color-black-soft);
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+.dark-mode-toggle::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: var(--color-white-soft);
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 50%;
+    transition: .3s ease all;
+    box-shadow: 0 0 2px 2px rgb(0, 0, 0, .2);
+}
+.dark-mode-toggle span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background-color: transparent;
+    color: var(--color-white);
+}
+.dark-mode-toggle.dark-mode-active{
+    border: 1px solid var(--color-black-soft);
+    background-color: var(--color-white-soft);
+    color: var(--color-black-soft);
+}
+.dark-mode-active span{
+    color: var(--color-black-soft);
+}
+.dark-mode-active::after{
+    right: 0;
+    left: unset;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------- DARK MODE WEBSITE CONFIG ----------*/
+
+body.dark {
+    background-color: var(--color-black-soft);
+    color: var(--color-white-soft);
+}
+body.dark .hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #101010;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+body.dark .am-logo {
+    font-family: "Crimson Pro", serif;
+    font-weight: 100;
+    font-size: 5rem;
+    letter-spacing: -6px;
+}
+body.dark .hero-text h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+body.dark .hero-text p{
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+
+body.dark .about-me-container .about-me-content .about-me-text{
+    color: var(--color-white-soft);
+}
+
+
+/*---------- HEADER DARK MODE ----------*/
+header.header-dark-mode nav ul li a {
+    position: relative;
+    color: var(--color-white);
+    font-size: 18px;
+    transition: all .3s;
+
+}
+header.header-dark-mode nav ul li a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .3s;
+}
+header.header-dark-mode nav ul li a:hover::after {
+    width: 100%;
+    background: var(--color-white-snow);
+}
+/* Header's links to black */
+header.header-dark-mode.header-active nav ul li a {
+    color: var(--color-black);
+}
