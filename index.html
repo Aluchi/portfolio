@@ -19,8 +19,8 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about-me">About me</a></li>
                 <li><a href="#knowledge">Knowledge</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
 
                 <!----------- DARK MODE BUTTON ----------->
                 <button class="dark-mode-toggle" id="dark-mode-toggle">
@@ -42,7 +42,6 @@
                 </div>
             </div>
         </section>
-
 
         <!----------- PRESENTATION---------->
 
@@ -96,64 +95,90 @@
 
         <!----------- PORTFOLIO ---------->
 
-        <section class="portfolio-container">
+        <section class="portfolio-container" id="portfolio">
             <h2 class="sections-title">Portfolio</h2>
             <div class="portfolio-content">
                 <article class="project">
                     <div class="project-text">
                         <time>2024</time>
-                        <h3>Project 1</h3>
+                        <h3>Blog: "Travel With Me"</h3>
                     </div>
-                    <a href="#">
-                        <img src="./imgs/sample-img.png" alt="">
+                    <a href="#" class="img-container">
+                        <img src="./imgs/travel-with-me.jpg" alt="">
                     </a>
-                    <button>Check it</button>
+                    <button class="check-it-btn" id="open">
+                        <span>Check it</span>
+                    </button>
                 </article>
                 <article class="project">
                     <div class="project-text">
-                        <time>2024</time>
-                        <h3>Project 2</h3>
+                        <time>2023</time>
+                        <h3>"La Libertad Avanza"</h3>
                     </div>
-                    <a href="#">
-                        <img src="./imgs/sample-img.png" alt="">
+                    <a href="#" class="img-container">
+                        <img src="./imgs/lla.jpg" alt="">
                     </a>
-                    <button>Check it</button>
+                    <button class="check-it-btn" id="open">
+                        <span>Check it</span>
+                    </button>
                 </article>
                 <article class="project">
                     <div class="project-text">
                         <time>2024</time>
                         <h3>Project 3</h3>
                     </div>
-                    <a href="#">
+                    <a href="#" class="img-container">
                         <img src="./imgs/sample-img.png" alt="">
                     </a>
-                    <button>Check it</button>
+                    <button class="check-it-btn" id="open">
+                        <span>Check it</span>
+                    </button>
                 </article>
                 <article class="project">
                     <div class="project-text">
                         <time>2024</time>
                         <h3>Project 4</h3>
                     </div>
-                    <a href="#">
+                    <a href="#" class="img-container">
                         <img src="./imgs/sample-img.png" alt="">
                     </a>
-                    <button>Check it</button>
+                    <button class="check-it-btn" id="open">
+                        <span>Check it</span>
+                    </button>
                 </article>
             </div>
         </section>
-
     </main>
+
+    <div class="">
+
+    </div>
 
 
     <!--------- FOOTER --------->
     <footer>
-
+        <nav>
+            <div class="social-media">
+                <h4>Social media</h4>
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="contact" id="contact">
+                <h4>Contact</h4>
+                <p><i class="fa-solid fa-envelope"></i> AluchiCoder@gmail.com</p>
+            </div>
+        </nav>
     </footer>
 
 
     <!--------- JAVASCRIPT --------->
     <script src="./js/header.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/dark-mode.js"></script>
 
 </body>
 

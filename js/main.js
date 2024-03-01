@@ -1,8 +1,16 @@
-const darkModeBtn = document.querySelector("#dark-mode-toggle");
-const headerDarkMode = document.querySelector("header");
 
-darkModeBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-    darkModeBtn.classList.toggle("dark-mode-active");
-    headerDarkMode.classList.toggle("header-dark-mode");
+const links = document.querySelectorAll('nav a');
+
+
+links.forEach(link => {
+
+    link.addEventListener('click', event => {
+        event.preventDefault();
+
+        const href = link.getAttribute('href');
+
+        document.querySelector(href).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
