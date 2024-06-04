@@ -1,0 +1,120 @@
+{
+    "header": {
+        "nav": {
+            "items": [
+                {"text": "Home", "href": "#home"},
+                {"text": "About me", "href": "#about-me"},
+                {"text": "Knowledge", "href": "#knowledge"},
+                {"text": "Certificates", "href": "#certificates"},
+                {"text": "Portfolio", "href": "#portfolio"},
+                {"text": "Contact", "href": "#contact"}
+            ],
+            "dark_mode_toggle": {
+                "sun_icon": "fa-solid fa-sun",
+                "moon_icon": "fa-sharp fa-solid fa-moon"
+            }
+        }
+    },
+    "main": {
+        "hero": {
+            "id": "home",
+            "logo": "A.M.",
+            "greeting": "GREETINGS! I'M ALEXANDER MURUCHI",
+            "role": "Frontend Developer"
+        },
+        "about_me": {
+            "id": "about-me",
+            "img_src": "./imgs/pic.png",
+            "img_alt": "Portrait of Alexander Muruchi",
+            "introduction_title": "Let me introduce myself:",
+            "introduction_text": "My name is <strong>Alexander Muruchi</strong>. I'm from Argentina, specifically Buenos Aires. Since the beginning of last year I've been studying as much as I could about web development. After some time of searching for what I wanted to do in this field, I decided that I wanted to become a <strong>Frontend Developer</strong>. After studying independently for a while, I took some online courses on Web Development and JavaScript to enhance my skills."
+        },
+        "knowledge": {
+            "id": "knowledge",
+            "title": "Knowledge",
+            "description": "I've studied and learned <strong>HTML5</strong>, <strong>CSS</strong>, <strong>SASS</strong>, <strong>GIT</strong>, <strong>JavaScript</strong> and <strong>Bootstrap</strong>.",
+            "icons": [
+                "fa-brands fa-html5",
+                "fa-brands fa-css3-alt",
+                "fa-brands fa-js",
+                "fa-brands fa-git-alt",
+                "fa-brands fa-sass",
+                "fa-brands fa-bootstrap"
+            ]
+        },
+        "certificates": {
+            "id": "certificates",
+            "title": "Certificates",
+            "images": [
+                {"src": "./imgs/desarrollo-web.png", "alt": "desarrollo web certificado", "href": "https://www.coderhouse.com/ar/certificados/654fcd46ed2bce068418a835?lang=es"},
+                {"src": "./imgs/javascript.png", "alt": "javascript certificado", "href": "https://www.coderhouse.com/ar/certificados/663b3ce574ca766166ff161d?lang=es"}
+            ]
+        },
+        "portfolio": {
+            "id": "portfolio",
+            "title": "Portfolio",
+            "projects": [
+                {
+                    "year": "2024",
+                    "title": "La Argentinidad",
+                    "img_src": "./imgs/la-argentinidad-banner.png",
+                    "img_alt": "La Argentinidad",
+                    "classImg": "img",
+                    "data_index": 0,
+                    "href": "https://aluchi.github.io/la-argentinidad/",
+                    "button_text": "Read more",
+                    "description": "'La Argentinidad' is a news website I created as a project for my JavaScript course."
+                },
+                {
+                    "year": "2024",
+                    "title": "Caffé Lusso",
+                    "img_src": "./imgs/caffe-lusso.png",
+                    "img_alt": "Caffé Lusso",
+                    "classImg": "imgTwo",
+                    "data_index": 1,
+                    "href": "https://aluchi.github.io/Caffe-Losso/",
+                    "button_text": "Read more",
+                    "description": "'Caffé Lusso' is a website for a fictional coffee shop that I've created to practice my skills in CSS and, especially, JavaScript."
+                },
+                {
+                    "year": "2024",
+                    "title": "La Libertad Avanza",
+                    "img_src": "./imgs/lla.jpg",
+                    "img_alt": "La Libertad Avanza",
+                    "classImg": "imgThree",
+                    "data_index": 2,
+                    "href": "https://aluchi.github.io/la-libertad-avanza/",
+                    "button_text": "Read more",
+                    "description": "'La Libertad Avanza' is an <strong>unofficial</strong> website of the Argentine political party with the same name, which I developed as a project for my web development course. This is one of my first projects, and I used bootstrap for its creation."
+                },
+                {
+                    "year": "2024",
+                    "title": "Travel with me (blog)",
+                    "img_src": "./imgs/travel-with-me.jpg",
+                    "img_alt": "Travel with me (blog)",
+                    "classImg": "imgFour",
+                    "data_index": 3,
+                    "href": "https://aluchi.github.io/travel-with-me/",
+                    "button_text": "Read more",
+                    "description": "'Travel With Me' is an online travel blog that began development in late 2023 and was completed in May of 2024. My main goal in creating it was to practice all the knowledge I have acquired throughout my studies."
+                }
+            ]
+        }
+    },
+    "footer": {
+        "social_media": {
+            "title": "Social media",
+            "links": [
+                {"href": "https://www.instagram.com/_aluchii_/", "icon": "fa-brands fa-instagram"},
+                {"href": "https://twitter.com/_Aluchi_", "icon": "fa-brands fa-x-twitter"},
+                {"href": "https://github.com/Aluchi/", "icon": "fa-brands fa-github"},
+                {"href": "https://www.linkedin.com/in/aluchi", "icon": "fa-brands fa-linkedin"}
+            ]
+        },
+        "contact": {
+            "title": "Contact",
+            "email": {"icon": "fa-solid fa-envelope", "text": "AluchiCode@gmail.com"},
+            "phone": {"icon": "fa-solid fa-phone", "text": "+54 9 11 2548-1331"}
+        }
+    }
+}

@@ -1,0 +1,147 @@
+@media screen and (max-width: 1020px) {
+    header {
+        justify-content: right;
+        padding: 2rem;
+        z-index: 20;
+
+        nav {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            align-items: end;
+            justify-content: start;
+            background-color: var(--color-black);
+            transition: transform 0.5s ease;
+            padding: 2rem 2rem 0 4rem;
+            transform: translateX(100%);
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                gap: 2rem;
+
+                li {
+                    a {
+                        color: var(--color-white);
+                    }
+                }
+            }
+        }
+
+        &.nav-active {
+            nav {
+                transform: translateX(0);
+            }
+        }
+    }
+
+    .open-nav,
+    .close-nav {
+        display: block;
+    }
+
+    .close-nav {
+        color: var(--color-white);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .am-logo,
+    body.dark .am-logo {
+        font-size: 3rem;
+    }
+
+    .hero-text {
+        h1,
+        body.dark & h1 {
+            font-size: 1.5rem;
+        }
+
+        p,
+        body.dark & p {
+            font-size: 1rem;
+        }
+    }
+
+    .topic-section {
+        padding: 30% 0;
+    }
+
+    .about-me-container {
+        .about-me-content {
+            img {
+                width: 156px;
+            }
+        }
+    }
+
+    .certificates {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .knowledge-container {
+        .knowledge-content {
+            i {
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-container {
+        .portfolio-content {
+            grid-template-columns: repeat(1, 1fr);
+            padding: 3rem;
+            gap: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .modal-container {
+        .modal {
+            width: 100%;
+            max-width: 50%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+
+            .modal-img {
+                width: 100%;
+                height: 50%;
+            }
+
+            .modal-content {
+                width: 100%;
+                height: 50%;
+
+                h1 {
+                    font-size: 26px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .modal-container {
+        .modal {
+            width: 100%;
+            max-width: 80%;
+        }
+    }
+}
